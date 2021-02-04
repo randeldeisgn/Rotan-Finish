@@ -543,6 +543,7 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+                    gap: 4em;
                     position: fixed;
                     right: -150%;
                     top: 70px;
@@ -930,9 +931,6 @@
 
 
 @media (max-width: 480px) and (min-width: 320px){
-    *{
-        // outline: 1px solid red;
-    }
 
     header{
         display: block;
@@ -959,15 +957,75 @@
 
             .hero-center-content{
 
-                // h1{
-                //     font-size: 1.2em;
-                //     width: 60%;
-                // }
+               .center-top{
 
-                // p{
-                //     font-size: 12px;
-                //     width: 60%;
-                // }
+                    h1{
+                        font-size: 2em;
+                        width: 80%;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        width: 80%;
+                    }
+               }
+            }
+        }
+    }
+
+    #latest{
+
+        .latest-wrapper{
+
+            .latest-left-content{
+
+                h2{
+                    width: 50%;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .latest-right-content{
+
+                p{
+                    width: 50%;
+                }
+            }
+        }
+
+        .latest-wrapper-second{
+
+            .latest-left-second{
+
+                p{
+                    width: 55%;
+                }
+            }
+        }
+    }
+
+    #special{
+
+        .special-wrapper{
+
+            h1{
+                font-size: 1.7em;
+            }
+        }
+    }
+
+    #memories{
+
+        .memories-wrapper{
+
+            .memories-image{
+
+                h2{
+                    width: 70%;
+                }
             }
         }
     }
