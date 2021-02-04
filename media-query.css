@@ -1,0 +1,628 @@
+:root {
+  --body: #F4F4F4;
+  --txt: #9b9b9b;
+  --hdr-clr: #5C7D84;
+  --scnd-blue: #EEF2F2;
+  --wht: #fff;
+  --yllw: #E4C249;
+  --lhtblk: rgba(0,0,0,.17);
+}
+
+@media (max-width: 1100px) and (min-width: 850px) {
+  header {
+    padding: 12px;
+  }
+  #hero {
+    padding: 5em 3em;
+  }
+  #hero .hero-wrapper .hero-left-content {
+    display: none;
+  }
+  #hero .hero-wrapper .hero-left-content img {
+    height: 450px;
+  }
+  #hero .hero-wrapper .hero-center-content h1 {
+    font-size: 2.2em;
+  }
+  #hero .hero-wrapper .hero-center-content p {
+    font-size: 15px;
+  }
+  #hero .hero-wrapper .hero-right-content img {
+    height: 350px;
+  }
+  #about {
+    padding: 5em 3em;
+  }
+  #about .about-wrapper .about-left-content .rotan-img {
+    height: 550px;
+  }
+  #about .about-wrapper .about-right-content h2 {
+    font-size: 2em;
+  }
+  #about .about-wrapper .about-right-content p {
+    font-size: 13px;
+  }
+  #latest {
+    padding: 5em 3em;
+  }
+  #latest .latest-wrapper .latest-left-content h2 {
+    font-size: 2em;
+  }
+  #latest .latest-wrapper .latest-right-content p {
+    width: 45%;
+  }
+  #latest .latest-wrapper-second .latest-right-second p {
+    font-size: 13px;
+  }
+  #gallery {
+    padding: 5em 3em;
+  }
+  #gallery h2 {
+    font-size: 2em;
+  }
+  #special .special-wrapper h1 {
+    font-size: 2.2em;
+  }
+  #special .special-wrapper p {
+    font-size: 13px;
+  }
+  #inquire {
+    padding: 5em 3em;
+  }
+  #inquire .inquire-wrapper .inquire-left-content h2 {
+    font-size: 2em;
+  }
+  #inquire .inquire-wrapper .inquire-right-content p {
+    font-size: 13px;
+  }
+  #inquire .inquire-wrapper-second .inquire-left-second p {
+    font-size: 13px;
+  }
+  #inquire .inquire-wrapper-second .inquire-right-second h2 {
+    font-size: 2em;
+  }
+  #our-team {
+    padding: 5em 3em;
+  }
+  #our-team .our-team-wrapper h2 {
+    font-size: 2em;
+  }
+  #our-team .our-team-wrapper .first-team .card .profile {
+    height: 280px;
+  }
+  #memories {
+    padding: 5em 3em;
+  }
+  #memories .memories-wrapper .memories-image h2 {
+    font-size: 2em;
+  }
+  #memories .memories-wrapper .memories-image img {
+    height: 550px;
+  }
+  #memories .memories-wrapper .memories-info p {
+    font-size: 13px;
+  }
+  #footer {
+    padding: 5em 3em;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 600px) {
+  header {
+    padding: 12px;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    -webkit-transition: all ease-in-out 400ms;
+    transition: all ease-in-out 400ms;
+  }
+  header nav .nav-2 {
+    padding-bottom: 12px;
+  }
+  header nav .nav-2 .nav-list {
+    background: #fff;
+    height: 100vh;
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    right: -150%;
+    top: 70px;
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 .nav-list li a {
+    font-size: 2em;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 .nav-list li a:hover {
+    font-style: italic;
+  }
+  header nav .nav-2 .fa {
+    font-size: 18px;
+  }
+  header nav .nav-2 .checkbtn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .nav-2 .checkbtn #menu {
+    display: block;
+    height: 2.5px;
+    width: 40px;
+    position: absolute;
+    top: 33px;
+    background: var(--txt);
+    border-radius: 5px;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 .checkbtn #menu::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background: var(--txt);
+    width: 30px;
+    height: 2.5px;
+    border-radius: 5px;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 #check:checked ~ .nav-list {
+    right: 0;
+    opacity: 1;
+  }
+  header nav .nav-2 #check:checked ~ .checkbtn #menu {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header nav .nav-2 #check:checked ~ .checkbtn #menu::before {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    width: 40px;
+    top: 0;
+  }
+  header.sticky {
+    background: var(--wht);
+  }
+  #hero {
+    padding: 5em 2em;
+  }
+  #hero .hero-wrapper .hero-left-content {
+    display: none;
+  }
+  #hero .hero-wrapper .hero-center-content {
+    margin: 5em 0;
+    height: 50vh;
+  }
+  #hero .hero-wrapper .hero-center-content h1 {
+    font-size: 2.2em;
+  }
+  #hero .hero-wrapper .hero-right-content img {
+    height: 330px;
+  }
+  #about {
+    padding: 5em 2em;
+  }
+  #about .about-wrapper {
+    gap: 2em;
+  }
+  #about .about-wrapper .about-left-content .rotan-img {
+    height: 500px;
+  }
+  #about .about-wrapper .about-left-content .pro {
+    right: 0%;
+  }
+  #about .about-wrapper .about-right-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+  #about .about-wrapper .about-right-content p {
+    font-size: 13px;
+  }
+  #latest {
+    padding: 5em 2em;
+  }
+  #latest .latest-wrapper .latest-left-content h2 {
+    font-size: 1.5em;
+  }
+  #latest .latest-wrapper .latest-right-content p {
+    font-size: 13px;
+    width: 60%;
+  }
+  #latest .latest-wrapper-second .latest-left-second p {
+    width: 60%;
+  }
+  #latest .latest-wrapper-second .latest-right-second p {
+    font-size: 13px;
+  }
+  #gallery {
+    padding: 5em 2em;
+  }
+  #gallery h2 {
+    font-size: 1.5em;
+  }
+  #inquire {
+    padding: 5em 2em;
+  }
+  #inquire .inquire-wrapper .inquire-left-content h2 {
+    font-size: 1.5em;
+  }
+  #inquire .inquire-wrapper .inquire-left-content img {
+    width: 80%;
+  }
+  #inquire .inquire-wrapper .inquire-right-content p {
+    font-size: 13px;
+  }
+  #inquire .inquire-wrapper-second .inquire-left-second p {
+    font-size: 13px;
+  }
+  #inquire .inquire-wrapper-second .inquire-right-second h2 {
+    font-size: 1.5em;
+  }
+  #our-team {
+    padding: 5em 2em;
+  }
+  #our-team h2 {
+    font-size: 1.5em;
+  }
+  #our-team .our-team-wrapper .first-team .card .profile {
+    height: 250px;
+  }
+  #memories {
+    padding: 5em 2em;
+  }
+  #memories .memories-wrapper .memories-image h2 {
+    font-size: 1.5em;
+  }
+  #memories .memories-wrapper .memories-image img {
+    height: 480px;
+  }
+  #memories .memories-wrapper .memories-info p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 12px;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    -webkit-transition: all ease-in-out 400ms;
+    transition: all ease-in-out 400ms;
+  }
+  header nav .nav-2 {
+    padding-bottom: 12px;
+  }
+  header nav .nav-2 .nav-list {
+    background: #fff;
+    height: 100vh;
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    right: -150%;
+    top: 70px;
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 .nav-list li a {
+    font-size: 2em;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 .nav-list li a:hover {
+    font-style: italic;
+  }
+  header nav .nav-2 .fa {
+    font-size: 18px;
+  }
+  header nav .nav-2 .checkbtn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .nav-2 .checkbtn #menu {
+    display: block;
+    height: 2.5px;
+    width: 40px;
+    position: absolute;
+    top: 33px;
+    background: var(--txt);
+    border-radius: 5px;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 .checkbtn #menu::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background: var(--txt);
+    width: 30px;
+    height: 2.5px;
+    border-radius: 5px;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+  }
+  header nav .nav-2 #check:checked ~ .nav-list {
+    right: 0;
+    opacity: 1;
+  }
+  header nav .nav-2 #check:checked ~ .checkbtn #menu {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header nav .nav-2 #check:checked ~ .checkbtn #menu::before {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    width: 40px;
+    top: 0;
+  }
+  header.sticky {
+    background: var(--wht);
+  }
+  #hero {
+    padding: 5em 1em;
+  }
+  #hero .hero-wrapper .hero-left-content {
+    display: none;
+  }
+  #hero .hero-wrapper .hero-center-content {
+    height: 50vh;
+    margin: 5em 0;
+  }
+  #hero .hero-wrapper .hero-center-content .center-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #hero .hero-wrapper .hero-center-content .center-top h1 {
+    font-size: 2.2em;
+    width: 70%;
+  }
+  #hero .hero-wrapper .hero-center-content .center-top p {
+    font-size: 15px;
+    width: 70%;
+  }
+  #hero .hero-wrapper .hero-right-content img {
+    height: 300px;
+  }
+  #about {
+    padding: 5em 1em;
+  }
+  #about .about-wrapper {
+    gap: 2em;
+  }
+  #about .about-wrapper .about-left-content .rotan-img {
+    height: 400px;
+  }
+  #about .about-wrapper .about-left-content .pro {
+    height: 120px;
+    width: 120px;
+    right: 33%;
+  }
+  #about .about-wrapper .about-right-content {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #about .about-wrapper .about-right-content h2 {
+    font-size: 1.5em;
+    width: 75%;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  #about .about-wrapper .about-right-content p {
+    font-size: 13px;
+  }
+  #latest {
+    padding: 5em 1em;
+  }
+  #latest .latest-wrapper .latest-left-content h2 {
+    font-size: 1.5em;
+    width: 40%;
+  }
+  #latest .latest-wrapper .latest-left-content img {
+    height: 280px;
+  }
+  #latest .latest-wrapper .latest-right-content {
+    margin-bottom: 4em;
+  }
+  #latest .latest-wrapper .latest-right-content h3 {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #latest .latest-wrapper .latest-right-content p {
+    font-size: 10px;
+    width: 40%;
+  }
+  #latest .latest-wrapper-second .latest-left-second .cta a img {
+    bottom: -100%;
+    left: 0;
+    height: 120px;
+    width: 120px;
+  }
+  #latest .latest-wrapper-second .latest-right-second p {
+    font-size: 13px;
+  }
+  #gallery {
+    padding: 5em 1em;
+  }
+  #gallery h2 {
+    font-size: 1.3em;
+  }
+  #gallery .cta-gallery a img {
+    height: 120px;
+    width: 120px;
+  }
+  #gallery .gallery-wrapper {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    -ms-grid-rows: (120px)[8];
+        grid-template-rows: repeat(8, 120px);
+  }
+  #special .special-wrapper h1 {
+    font-size: 2em;
+    width: 80%;
+  }
+  #special .special-wrapper p {
+    font-size: 13px;
+  }
+  #inquire {
+    padding: 5em 1em;
+  }
+  #inquire .inquire-wrapper .inquire-left-content h2 {
+    font-size: 1.5em;
+    width: 50%;
+  }
+  #inquire .inquire-wrapper .inquire-left-content img {
+    width: 80%;
+  }
+  #inquire .inquire-wrapper .inquire-right-content p {
+    font-size: 13px;
+  }
+  #inquire .inquire-wrapper .inquire-right-content .date,
+  #inquire .inquire-wrapper .inquire-right-content .venue,
+  #inquire .inquire-wrapper .inquire-right-content .information {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #inquire .inquire-wrapper-second .inquire-left-second {
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  #inquire .inquire-wrapper-second .inquire-left-second p {
+    font-size: 13px;
+  }
+  #inquire .inquire-wrapper-second .inquire-right-second h2 {
+    font-size: 1.5em;
+    width: 60%;
+  }
+  #inquire .inquire-wrapper-second .inquire-right-second .cta-inquire a img {
+    height: 120px;
+    width: 120px;
+  }
+  #our-team {
+    padding: 5em 1em;
+  }
+  #our-team .our-team-wrapper h2 {
+    font-size: 1.5em;
+  }
+  #our-team .our-team-wrapper .first-team {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  #our-team .our-team-wrapper .first-team .card {
+    width: 230px;
+  }
+  #our-team .our-team-wrapper .first-team .card .profile {
+    height: 250px;
+  }
+  #memories {
+    padding: 5em 1em;
+  }
+  #memories .memories-wrapper {
+    gap: 2em;
+  }
+  #memories .memories-wrapper .memories-image h2 {
+    font-size: 1.5em;
+    width: 50%;
+  }
+  #memories .memories-wrapper .memories-image img {
+    height: 300px;
+  }
+  #memories .memories-wrapper .memories-info p {
+    font-size: 13px;
+  }
+  #footer {
+    padding: 5em 0 2em 0;
+  }
+  #footer .footer-wrapper .footer-list {
+    padding: 0 10px;
+    margin-bottom: 1em;
+  }
+  #footer .copy {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  header {
+    display: block;
+  }
+  header nav .logo img {
+    height: 35px;
+    width: 70px;
+  }
+  header nav .nav-list {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media-query.css.map */
